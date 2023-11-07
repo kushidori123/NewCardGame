@@ -16,7 +16,7 @@ public class Card : MonoBehaviour
     public void Set(CardBase cardBase)
     {
         Base = cardBase;
-        costText.text = cardBase.Cost.ToString();
+        costText.text = $"コスト：{cardBase.Cost}";
         descriptionText.text = cardBase.Description;
         icon.sprite = cardBase.Icon;
         nameText.text = cardBase.Name;
@@ -26,6 +26,7 @@ public class Card : MonoBehaviour
 
     public void OnClick()
     {
+        Debug.Log("クリックされました");
         OnClickCard?.Invoke(this);
     }
 

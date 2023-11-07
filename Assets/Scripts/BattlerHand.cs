@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class BattlerHand : MonoBehaviour
 {
-    List<Card> list = new List<Card>();
+    public List<Card> list = new List<Card>();
     //list‚É’Ç‰Á‚µ‚ÄŽ©•ª‚ÌŽq—v‘f‚É‚·‚é
     public void Add(Card card)
     {
@@ -21,7 +21,7 @@ public class BattlerHand : MonoBehaviour
         list.Sort((card0, card1) => card0.Base.Cost - card1.Base.Cost);
         for (int i = 0; i < list.Count; i++)
         {
-            float posX = (i - list.Count / 2f) * 2f;
+            float posX = (i - list.Count / 2f) * 20f;
             list[i].transform.localPosition = new Vector3(posX, 0);
         }
     }

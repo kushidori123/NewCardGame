@@ -76,15 +76,17 @@ public class GameMaster : MonoBehaviour
 
     void SendCardTo(Battler battler)
     {
-        Card card = cardGeneretter.Spawn(0);
+        //Card card = cardGeneretter.Spawn(0);
         //battler.Hand.Add(card);
-        battler.SetCardToHand(card);
-        /*for (int i = 0; i < 8; i++)
+        //battler.SetCardToHand(card);
+
+
+        for (int i = 0; i < 3; i++)
         {
             Card card = cardGeneretter.Spawn(i);
-            //battler.Hand.Add(card);
+            battler.Hand.Add(card);
             battler.SetCardToHand(card);
-        }*/
+        }
         battler.Hand.ResetPosition();
     }
 

@@ -17,7 +17,7 @@ public class Battler : MonoBehaviour
     public void SetCardToHand(Card card)
     {
         hand.Add(card);
-        //card.OnClickCard = SelectedCard;
+        card.OnClickCard = SelectedCard;
     }
     void SelectedCard(Card card)
     {
@@ -33,7 +33,7 @@ public class Battler : MonoBehaviour
         hand.Remove(card);
         submitPosition.Set(card);
         hand.ResetPosition();
-        //Debug.Log(card.Base.Number);
+        Debug.Log("’Ê‰ß");
     }
 
     public void OnSubmitButton()

@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: "\u30B5\u30D6\u30DE\u30B7\u30F3\u30AC\u30F3 7"
   m_EditorClassIdentifier: 
   cardNumber: 0
-  cost: 33
+  cost: 8
   type: 0
   kinds: 0
   description: 
